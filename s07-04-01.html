@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Somme</title>
+</head>
+<body>
+    <script>
+        let x, s = 0;
+        let txt = "";
+        let first = true;
+
+        do {
+            x = parseFloat(prompt("Entrez une valeur :"));
+            s += x;
+            if (first) {
+                txt += x;
+                first = false;
+            } else {
+                txt += " + " + x;
+            }
+        } while (confirm("Voulez-vous continuer ?"));
+
+        alert("La somme de " + txt + " est : " + s);
+    </script>
+</body>
+</html>
